@@ -15,7 +15,7 @@ public class DefaultValues {
 
     public static void main(String[] args) {
 
-        
+        int age=10;
         DefaultValues obj = new DefaultValues();
 
         System.out.println("Default byte value: " + obj.b);
@@ -26,5 +26,6 @@ public class DefaultValues {
         System.out.println("Default double value: " + obj.d);
         System.out.println("Default char value: '" + obj.c + "'");
         System.out.println("Default boolean value: " + obj.flag);
+        System.out.println(age);
     }
 }
