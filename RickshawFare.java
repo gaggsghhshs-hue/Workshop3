@@ -17,7 +17,7 @@ public class RickshawFare
     double nightTimeServiceCharge = 0.50;
     
     Scanner talkToDriver = new Scanner(System.in);
-     System.out.println("--Welcome to Girish Rickshaw Fare");
+     System.out.println("--Welcome to Girish Rickshaw Fare---");
      System.out.println("Lets calculate the customer fare as per trip details");
       System.out.println("how far was the trip (km):");
       double tripDistance = talkToDriver.nextDouble();
@@ -39,7 +39,7 @@ public class RickshawFare
       double moneysaved = 0.0;
         
        if (isCustomerlocal && (tripDistance > longdistance)){
-           moneysaved = initialPrice * localCustomerdiscount;
+           moneysaved = initialPrice * localCustomerdiscount; //ternary operator
            currentTotalFare -= moneysaved;
        }
        
